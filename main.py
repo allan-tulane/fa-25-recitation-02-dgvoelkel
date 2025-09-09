@@ -100,7 +100,4 @@ def compare_span(span_fn1, span_fn2, sizes=[10, 20, 50, 100, 1000, 5000, 10000])
 			span_fn2
 			))
 	return result
-print(work_calc(100, 2, 2,lambda n: 1))
-print(work_calc(100, 2, 2,lambda n: math.log2(n)))
-print(work_calc(100, 2, 2,lambda n: n))
 
