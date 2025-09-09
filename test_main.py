@@ -1,4 +1,5 @@
 from main import *
+import math
 
 def test_simple_work():
 	""" done. """

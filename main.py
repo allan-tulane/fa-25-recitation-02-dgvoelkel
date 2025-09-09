@@ -6,7 +6,7 @@ CMPS 2200  Recitation 2
 import tabulate
 import time
 ###
-
+import math
 def simple_work_calc(n, a, b):
 	"""Compute the value of the recurrence $W(n) = aW(n/b) + n
 
@@ -100,5 +100,7 @@ def compare_span(span_fn1, span_fn2, sizes=[10, 20, 50, 100, 1000, 5000, 10000])
 			span_fn2
 			))
 	return result
-
+print(work_calc(100, 2, 2,lambda n: 1))
+print(work_calc(100, 2, 2,lambda n: math.log2(n)))
+print(work_calc(100, 2, 2,lambda n: n))
 
